@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAO;
 
 namespace CTS
 {
@@ -49,6 +50,7 @@ namespace CTS
             DashboardUser u = new DashboardUser();
             u.Show();
             this.Hide();
+            
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
