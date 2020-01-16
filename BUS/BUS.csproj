@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\EMPLOYEE.cs" />
+    <Compile Include="DTO\MISSION.cs" />
+    <Compile Include="DTO\MISSION_PROCESS.cs" />
+    <Compile Include="DTO\TYPE_MISSION.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
