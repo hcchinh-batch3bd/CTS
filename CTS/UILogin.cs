@@ -9,7 +9,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DAO;
+using CTS.Models;
+using RestSharp;
 
 namespace CTS
 {
@@ -45,11 +46,21 @@ namespace CTS
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            UI_Admin f = new UI_Admin();
-            f.Show();
-            DashboardUser u = new DashboardUser();
-            u.Show();
-            this.Hide();
+            if (txtID.Text == "")
+                MessageBox.Show("Chưa nhập ID ");
+            else
+            {
+                if (txtPasswd.Text == "")
+                    MessageBox.Show("Chưa nhập mật khẩu");
+                else
+                {
+                    var client = new RestClient("http://localhost:1037/Account/CheckLogin?id=" + txtID.Text + "&pw=" + txtPasswd.Text + "");
+                    var request = new RestRequest(Method.GET);
+                    IRestResponse response = client.Execute(request);
+                    MessageBox.Show(response.Content.ToString());
+                }
+            }
+
             
         }
 

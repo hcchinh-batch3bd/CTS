@@ -47,11 +47,5 @@
     <Compile Include="DTO\TYPE_MISSION.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DAO\DAO.csproj">
-      <Project>{c5b7acd7-f603-4a89-b22a-2c930d866581}</Project>
-      <Name>DAO</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
