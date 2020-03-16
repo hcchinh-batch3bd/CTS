@@ -31,9 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardUser));
             this.panel_top = new System.Windows.Forms.Panel();
-            this.btnMininize = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnClose = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,19 +48,24 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.data = new System.Windows.Forms.DataGridView();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnMininize = new System.Windows.Forms.Button();
             this.panel_top.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_top
             // 
-            this.panel_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(109)))), ((int)(((byte)(240)))));
+            this.panel_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(151)))));
             this.panel_top.Controls.Add(this.btnMininize);
-            this.panel_top.Controls.Add(this.label1);
             this.panel_top.Controls.Add(this.btnClose);
+            this.panel_top.Controls.Add(this.pictureBox2);
+            this.panel_top.Controls.Add(this.label1);
             this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_top.Location = new System.Drawing.Point(0, 0);
             this.panel_top.Name = "panel_top";
@@ -70,38 +73,16 @@
             this.panel_top.TabIndex = 3;
             this.panel_top.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_top_MouseDown);
             // 
-            // btnMininize
-            // 
-            this.btnMininize.FlatAppearance.BorderSize = 0;
-            this.btnMininize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMininize.Image = global::CTS.Properties.Resources.minimize;
-            this.btnMininize.Location = new System.Drawing.Point(800, 3);
-            this.btnMininize.Name = "btnMininize";
-            this.btnMininize.Size = new System.Drawing.Size(37, 34);
-            this.btnMininize.TabIndex = 4;
-            this.btnMininize.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FloralWhite;
-            this.label1.Location = new System.Drawing.Point(33, 9);
+            this.label1.Location = new System.Drawing.Point(32, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(291, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "HỆ THỐNG THEO DÕI ĐÓNG GÓP";
-            // 
-            // btnClose
-            // 
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Image = global::CTS.Properties.Resources.close;
-            this.btnClose.Location = new System.Drawing.Point(843, 5);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(37, 30);
-            this.btnClose.TabIndex = 1;
-            this.btnClose.UseVisualStyleBackColor = true;
             // 
             // imageList1
             // 
@@ -283,6 +264,50 @@
             this.data.Size = new System.Drawing.Size(892, 403);
             this.data.TabIndex = 6;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(8, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(852, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(41, 40);
+            this.btnClose.TabIndex = 10;
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnMininize
+            // 
+            this.btnMininize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMininize.BackColor = System.Drawing.Color.Transparent;
+            this.btnMininize.FlatAppearance.BorderSize = 0;
+            this.btnMininize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMininize.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
+            this.btnMininize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMininize.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMininize.ForeColor = System.Drawing.Color.Transparent;
+            this.btnMininize.Image = ((System.Drawing.Image)(resources.GetObject("btnMininize.Image")));
+            this.btnMininize.Location = new System.Drawing.Point(811, 0);
+            this.btnMininize.Name = "btnMininize";
+            this.btnMininize.Size = new System.Drawing.Size(38, 40);
+            this.btnMininize.TabIndex = 11;
+            this.btnMininize.UseVisualStyleBackColor = false;
+            this.btnMininize.Click += new System.EventHandler(this.btnMininize_Click);
+            // 
             // DashboardUser
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -301,6 +326,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.data)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -308,9 +334,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel_top;
-        private System.Windows.Forms.Button btnMininize;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCreateMission;
@@ -327,5 +351,8 @@
         private System.Windows.Forms.DataGridView data;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnMininize;
     }
 }

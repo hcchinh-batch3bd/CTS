@@ -117,6 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnMininize.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAFhJREFUOE9j
+        GOHg////R4D4AYn4CFQ7JoAqmAPECURikNoHUO2YACQJUgjlEgRQQ0cNRAIj2EAg1gfiBgLYAIiJNtAd
+        iA8QwB5APDBepmrWo27hMBIAAwMAPLWkIlYznZEAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnClose.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAUlJREFUOE/d
+        k0tKA0EURRv8YAJK0MSsQdxBtuAHRcHgMqKYhQgRHahzcS5uQQSJik7EzwrEgZ9Re67cdFu0nY5DPXCg
+        332vq0NVKvofxHG8JF3+Hl6ewgNsuz6Ufm7jPk6qLoTBWXzEe2w4+75gAx9Q/RlluTBQwyc8wbLjYEGh
+        Hp6iPlx1nIXmHt7guKMvqIMFhWbwFjuOQmhM4wc2HSWQZRYUZOv4jtlfSbiGrzjkKIEsb8FhfMNVRymE
+        Or2uywDyHxcU5Je45TKFcBPPXA4M75xjy2UK4Qo+44ijQpgdxRdcdpRCWEEdypyjQphdRB3KhKMQGjt4
+        gWOOcmGmhNq/bUdZaFZRN+AIS44zqIfHeIf9ryADvat3hfOY7KmecQGvUdev/9XrwWAdd1F7qk3vWj1r
+        zzpY8/jg8JIOqokbVn/+itt/kij6BHVXk99Ypt3BAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAMlJREFUOE/t
+        kT0OgkAUhNeERC9Aqy0lJ+AKVHAHTsAVuIWNFTfxAnoDW1sLk3UGZqOufywUxsQv+RL2zXvTYL6CtXYB
+        53pOA0Ux3MpY43GgYAX30LGDS8Vh4DCFB7Z4cJZqbRg4yOCR1y9glmn9PVgs4YlXH+BOqbPnYKGCZ24P
+        hLuVzq9gOIMNN0bSqKori+C6G0+DHZFqezBouyiMVuePMOx3gggu3MBa8tsnuLBQzLzoR3f8C29AmEP3
+        A5yJYuaJl9Fc8U9gzAXzSeUiEb/zsQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

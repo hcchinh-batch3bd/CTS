@@ -31,7 +31,7 @@ namespace CTS
         public UI_Admin()
         {
             InitializeComponent();
-            this.btnLogout.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnLogout.Width, btnLogout.Height, 15, 15));
+            //this.btnLogout.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnLogout.Width, btnLogout.Height, 15, 15));
         }
         #region Instance
         public static UI_Admin Instance
@@ -128,6 +128,16 @@ namespace CTS
                 UI_Admin.Instance.ContainerMain.Controls.Add(uc);
             }
             UI_Admin.Instance.ContainerMain.Controls["frmAccount"].BringToFront();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

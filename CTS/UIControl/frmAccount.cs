@@ -16,5 +16,10 @@ namespace CTS.UIControl
         {
             InitializeComponent();
         }
+
+        private void data_ListEmployee_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

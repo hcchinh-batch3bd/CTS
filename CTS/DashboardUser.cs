@@ -13,7 +13,6 @@ namespace CTS
 {
     public partial class DashboardUser : Form
     {
-        UILogin frm;
         #region Create click down move form
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -24,10 +23,9 @@ namespace CTS
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
         #endregion
-        public DashboardUser(UILogin frm)
+        public DashboardUser()
         {
             InitializeComponent();
-            this.frm = frm;
         }
 
         private void panel_top_MouseDown(object sender, MouseEventArgs e)
@@ -39,12 +37,14 @@ namespace CTS
             }
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.Reset();
-            Properties.Settings.Default.Save();
-            this.Close();
-            frm.Show();
+            Application.Exit();
+        }
+
+        private void btnMininize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
