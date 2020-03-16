@@ -254,7 +254,7 @@
             this.btn_email.FlatAppearance.BorderSize = 0;
             this.btn_email.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_email.Image = ((System.Drawing.Image)(resources.GetObject("btn_email.Image")));
-            this.btn_email.Location = new System.Drawing.Point(568, 2);
+            this.btn_email.Location = new System.Drawing.Point(524, 2);
             this.btn_email.Name = "btn_email";
             this.btn_email.Size = new System.Drawing.Size(38, 33);
             this.btn_email.TabIndex = 5;
@@ -302,7 +302,7 @@
             // 
             // panel_alert
             // 
-            this.panel_alert.BackColor = System.Drawing.Color.Firebrick;
+            this.panel_alert.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel_alert.Location = new System.Drawing.Point(88, 0);
             this.panel_alert.Margin = new System.Windows.Forms.Padding(0);
             this.panel_alert.Name = "panel_alert";
