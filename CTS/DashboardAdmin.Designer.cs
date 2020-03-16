@@ -125,7 +125,7 @@
             this.btnAccount.Text = "Tài khoản";
             this.btnAccount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAccount.UseVisualStyleBackColor = false;
-            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
+            this.btnAccount.Click += new System.EventHandler(this.BtnAccount_Click);
             // 
             // panel1
             // 

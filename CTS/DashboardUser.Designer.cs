@@ -148,7 +148,6 @@
             this.btnLogout.TabIndex = 5;
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.UseVisualStyleBackColor = false;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // button6
             // 
@@ -288,8 +287,6 @@
             this.btnClose.Size = new System.Drawing.Size(41, 40);
             this.btnClose.TabIndex = 10;
             this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // btnMininize
             // 
             this.btnMininize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));

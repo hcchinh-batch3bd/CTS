@@ -23,9 +23,11 @@ namespace CTS
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
         #endregion
-        public DashboardUser()
+        UILogin fm;
+        public DashboardUser(UILogin fm)
         {
             InitializeComponent();
+            this.fm = fm;
         }
 
         private void panel_top_MouseDown(object sender, MouseEventArgs e)
@@ -35,11 +37,6 @@ namespace CTS
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void btnMininize_Click(object sender, EventArgs e)

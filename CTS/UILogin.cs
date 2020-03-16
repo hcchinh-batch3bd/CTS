@@ -9,7 +9,6 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DAO;
 
 namespace CTS
 {
@@ -32,17 +31,11 @@ namespace CTS
         private void login_Load(object sender, EventArgs e)
         {
         }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             UI_Admin f = new UI_Admin();
             f.Show();
-            DashboardUser u = new DashboardUser();
+            DashboardUser u = new DashboardUser(this);
             u.Show();
             //this.Hide();
             

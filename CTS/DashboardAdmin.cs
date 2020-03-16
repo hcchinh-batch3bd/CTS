@@ -57,11 +57,6 @@ namespace CTS
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void UI_Admin_Load(object sender, EventArgs e)
         {
             _obj = this;
@@ -117,7 +112,7 @@ namespace CTS
             panel_alert.Visible = !panel_alert.Visible;
         }
 
-        private void btnAccount_Click(object sender, EventArgs e)
+        private void BtnAccount_Click(object sender, EventArgs e)
         {
             select();
             chosse_account.Visible = true;

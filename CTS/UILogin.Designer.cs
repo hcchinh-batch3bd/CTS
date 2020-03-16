@@ -84,7 +84,6 @@ namespace CTS
             this.btnClose.Size = new System.Drawing.Size(41, 34);
             this.btnClose.TabIndex = 2;
             this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label1
             // 
