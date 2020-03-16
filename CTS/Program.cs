@@ -12,6 +12,9 @@ namespace CTS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            if(!Properties.Settings.Default.apiKey.ToString().Equals(""))
+                Application.Run(new DashboardUser(new UILogin()));
+            else
             Application.Run(new UILogin());
         }
     }

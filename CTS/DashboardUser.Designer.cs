@@ -39,7 +39,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.btnCreateMission = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -116,7 +116,7 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.btnCreateMission);
             this.panel1.Controls.Add(this.button1);
@@ -157,16 +157,17 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Xin chào: NAA";
             // 
-            // button8
+            // btnLogout
             // 
-            this.button8.BackColor = System.Drawing.Color.Coral;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(814, 15);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 5;
-            this.button8.Text = "Đăng xuất";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnLogout.BackColor = System.Drawing.Color.Coral;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Location = new System.Drawing.Point(814, 15);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(75, 23);
+            this.btnLogout.TabIndex = 5;
+            this.btnLogout.Text = "Đăng xuất";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // button6
             // 
@@ -321,7 +322,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.DataGridView data;
         private System.Windows.Forms.Label label4;

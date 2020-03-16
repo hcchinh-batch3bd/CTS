@@ -37,7 +37,7 @@ namespace CTS
             this.label1 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtPasswd = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.ckb_remember = new System.Windows.Forms.CheckBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -111,16 +111,16 @@ namespace CTS
             this.txtPasswd.Size = new System.Drawing.Size(222, 20);
             this.txtPasswd.TabIndex = 4;
             // 
-            // checkBox1
+            // ckb_remember
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.ForeColor = System.Drawing.Color.Aqua;
-            this.checkBox1.Location = new System.Drawing.Point(136, 129);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(118, 17);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Ghi nhớ đăng nhập";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.ckb_remember.AutoSize = true;
+            this.ckb_remember.ForeColor = System.Drawing.Color.Aqua;
+            this.ckb_remember.Location = new System.Drawing.Point(136, 129);
+            this.ckb_remember.Name = "ckb_remember";
+            this.ckb_remember.Size = new System.Drawing.Size(118, 17);
+            this.ckb_remember.TabIndex = 5;
+            this.ckb_remember.Text = "Ghi nhớ đăng nhập";
+            this.ckb_remember.UseVisualStyleBackColor = true;
             // 
             // btnLogin
             // 
@@ -183,7 +183,7 @@ namespace CTS
             this.ClientSize = new System.Drawing.Size(404, 183);
             this.Controls.Add(this.btnForgetPassword);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.ckb_remember);
             this.Controls.Add(this.txtPasswd);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label3);
@@ -211,7 +211,7 @@ namespace CTS
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.TextBox txtPasswd;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox ckb_remember;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.PictureBox pictureBox1;
