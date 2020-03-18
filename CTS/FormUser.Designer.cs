@@ -66,6 +66,7 @@
             this.btnCaiDat.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCaiDat.FlatAppearance.BorderSize = 0;
             this.btnCaiDat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCaiDat.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCaiDat.ForeColor = System.Drawing.Color.White;
             this.btnCaiDat.Image = ((System.Drawing.Image)(resources.GetObject("btnCaiDat.Image")));
             this.btnCaiDat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -85,6 +86,7 @@
             this.btnBXH.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBXH.FlatAppearance.BorderSize = 0;
             this.btnBXH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBXH.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBXH.ForeColor = System.Drawing.Color.White;
             this.btnBXH.Image = ((System.Drawing.Image)(resources.GetObject("btnBXH.Image")));
             this.btnBXH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -104,6 +106,7 @@
             this.btnTaiKhoan.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnTaiKhoan.FlatAppearance.BorderSize = 0;
             this.btnTaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaiKhoan.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTaiKhoan.ForeColor = System.Drawing.Color.White;
             this.btnTaiKhoan.Image = ((System.Drawing.Image)(resources.GetObject("btnTaiKhoan.Image")));
             this.btnTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -123,6 +126,7 @@
             this.btnNhiemVu.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNhiemVu.FlatAppearance.BorderSize = 0;
             this.btnNhiemVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhiemVu.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhiemVu.ForeColor = System.Drawing.Color.White;
             this.btnNhiemVu.Image = ((System.Drawing.Image)(resources.GetObject("btnNhiemVu.Image")));
             this.btnNhiemVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -142,7 +146,7 @@
             this.btnDashBoard.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDashBoard.FlatAppearance.BorderSize = 0;
             this.btnDashBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashBoard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashBoard.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashBoard.ForeColor = System.Drawing.Color.White;
             this.btnDashBoard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashBoard.Image")));
             this.btnDashBoard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -202,11 +206,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(303, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 21);
+            this.label3.Size = new System.Drawing.Size(118, 24);
             this.label3.TabIndex = 0;
             this.label3.Text = "TRANG CHỦ";
             // 
@@ -217,6 +221,7 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(722, 366);
             this.panelMain.TabIndex = 2;
+            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
             // 
             // FormUser
             // 
@@ -226,6 +231,7 @@
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelBar);
             this.Controls.Add(this.panelMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TRANG CHỦ";

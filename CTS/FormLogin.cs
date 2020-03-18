@@ -14,7 +14,6 @@ namespace CTS
     public partial class FormLogin : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-
         private static extern IntPtr CreateRoundRectRgn
         (
             int nLeftRect,
@@ -25,11 +24,14 @@ namespace CTS
             int nHeightEllipse
         );
 
+        
+
         public FormLogin()
         {
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 10, 10));
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
@@ -40,6 +42,12 @@ namespace CTS
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void FormLogin_MouseDown(object sender, MouseEventArgs e)
+        {
+            Setting.ReleaseCapture();
+            Setting.SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

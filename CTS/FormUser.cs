@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,10 +16,17 @@ namespace CTS
         private Button currentButton;
         private Random random;
         private int tempIndex;
+
+
+        
+
         public FormUser()
         {
             InitializeComponent();
             random = new Random();
+            this.ControlBox = false;
+            this.Text = string.Empty;
+            this.Region = Region.FromHrgn(Setting.CreateRoundRectRgn(0, 0, Width, Height, 10, 10));
         }
 
         private void FormUser_Load(object sender, EventArgs e)
@@ -91,6 +99,11 @@ namespace CTS
         private void btnCaiDat_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
