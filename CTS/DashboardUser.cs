@@ -46,5 +46,10 @@ namespace CTS
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

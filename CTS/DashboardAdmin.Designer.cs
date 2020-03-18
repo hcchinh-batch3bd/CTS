@@ -286,7 +286,7 @@
             this.label1.ForeColor = System.Drawing.Color.FloralWhite;
             this.label1.Location = new System.Drawing.Point(38, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(291, 20);
+            this.label1.Size = new System.Drawing.Size(425, 29);
             this.label1.TabIndex = 3;
             this.label1.Text = "HỆ THỐNG THEO DÕI ĐÓNG GÓP";
             // 
@@ -299,6 +299,7 @@
             this.panel_main.Name = "panel_main";
             this.panel_main.Size = new System.Drawing.Size(681, 413);
             this.panel_main.TabIndex = 4;
+            this.panel_main.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_main_Paint);
             // 
             // panel_alert
             // 

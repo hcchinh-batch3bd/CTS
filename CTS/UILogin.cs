@@ -39,12 +39,13 @@ namespace CTS
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            UI_Admin f = new UI_Admin();
-            f.Show();
-            DashboardUser u = new DashboardUser();
-            u.Show();
-            //this.Hide();
-            
+            this.Hide();
+            FormUser fu = new FormUser();
+            fu.Show();
+            //UI_Admin f = new UI_Admin();
+            //f.Show();
+            //DashboardUser u = new DashboardUser();
+            //u.Show();
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)

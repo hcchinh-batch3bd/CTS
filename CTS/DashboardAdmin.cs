@@ -139,5 +139,10 @@ namespace CTS
         {
             Application.Exit();
         }
+
+        private void panel_main_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

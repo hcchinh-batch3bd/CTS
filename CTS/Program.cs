@@ -12,7 +12,7 @@ namespace CTS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UILogin());
+            Application.Run(new FormLogin());
         }
     }
 }
